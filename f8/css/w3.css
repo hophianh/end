@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 html {
+    scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -48,6 +49,9 @@ html {
 .text-center {
     text-align: center;
 }
+.mt-8 {
+    margin-top: 8px;
+}
 
 /* button */
 
@@ -67,7 +71,9 @@ html {
     opacity: 0.7;
     cursor: pointer;
 }
-
+#container {
+    overflow: hidden;;
+}
 /* header */
 #header {
     position: fixed;
@@ -77,49 +83,70 @@ html {
     background-color: black;
     height: 46px;
     font-size: 15px;
+    
+    
 }
 
 #nav {
     display: inline-block;
 }
 
-#header .search-btns {
+#header .mobile-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none ;
+}
+
+#header .search-btns,
+#header .mobile-menu {
         float: right;
         padding: 0 21px;
-        cursor: pointer;
-}
+        
+    }
 
-#header .search-btns:hover {
+#header .search-btns:hover{
     background-color: #f44336;
-    display: inline-block;
+    cursor: pointer;
+    
 }
 
-#header .search-ic {
+#header .mobile-menu:hover {
+    background-color: #ccc;
+    cursor: pointer;
+    color: black;
+}
+
+#header .mobile-menu:hover .menu-ic{
+    background-color: #ccc;
+    cursor: pointer;
+    color: black;
+}
+
+#header .search-ic,#header .menu-ic {
     color:white;
     font-size: 20px;
     line-height: 46px;
 }
 #nav > li {
     display: inline-block;
-}
+} 
 
 #nav li {
-    
     position: relative;
-    
 }
 
 #nav > li > a {
     color: white;
     text-transform: uppercase;
+
 }
 
 #nav li a {
-
     text-decoration: none;  
     line-height: 46px;
     padding: 0 24px;
-    display: inline-block;
+    
 }
 
 #nav li:hover .navsup {
@@ -180,9 +207,12 @@ html {
 }
 #content .content-section {
     width: 800px;
+    max-width: 100%;
+     
     margin-left: auto;
     margin-right: auto;
     padding: 64px 16px;
+    
 }
 
 #content .section-band{
@@ -213,6 +243,9 @@ html {
 #content .product {
     margin-top: 48px;
     padding: 32px 0;
+    left: 0;
+    right: 0;
+    text-align: center;
     
 }
 
@@ -234,14 +267,13 @@ html {
 #content .product-1 {
     float: left;
     width: calc(100% / 3);
-    width: 255px;
     height: 222px;
     text-align: center;
 }
 /*--sale--*/
 .sale {
     background-color: black;
-    height: 1200px;
+    height: auto;
 }
 
 .sale .section-music {
@@ -283,7 +315,7 @@ html {
 
 .sale .prd-one {
     margin-top: 32px;
-    padding: 32px px;
+    padding: 32px ;
     
 }
  
@@ -469,19 +501,21 @@ html {
     }
 }
 
-.footer-end {
-    background-color: black !important;;
+.footerr-end {
+    width: 100%;
+   
+    background-color: black;
     padding: 64px 16px;
     text-align: center;
     font-size: 30px;
     
 }
-.icon-end a {
+.iconn-end a {
     text-decoration: none;
     color: #757575;
 }
 
-.icon-end a:hover {
+.iconn-end a:hover {
     opacity: 0.6;
 }
 

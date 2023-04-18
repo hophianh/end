@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./css/img/phy_studio-removebg-preview (1).png">
     <link rel="stylesheet" href="./css/w3.css">
+    <link rel="stylesheet" href="./css/reponsive.css">
     <link rel="stylesheet" href="./css/fonts/themify-icons-font/themify-icons/themify-icons.css">
     <title>PhyStudio</title>
 </head>
@@ -13,18 +15,18 @@
         <div id="header">
             <!--Begin-->
             <div id="nav">
-                <li><a href="">Trang Chủ</a></li>
-                <li><a href="">Sản Phẩm</a></li>
-                <li><a href="">Khuyến Mãi</a></li>
-                <li><a href="">Liên Hệ</a></li>
-                <li><a href="">
+                <li><a href="#">Trang Chủ</a></li>
+                <li><a href="#sanpham-sale">Sản Phẩm</a></li>
+                <li><a href="#sanpham-sale">Khuyến Mãi</a></li>
+                <li><a href="#toitranglh">Liên Hệ</a></li>
+                <li><a href="#">
                     Hỗ Trợ
                     <i class="nav-icon ti-angle-down"></i>
                     </a>
                     <ul class="navsup">
-                        <li><a href="">Sự cố</a></li>
-                        <li><a href="">Thông tin</a></li>
-                        <li><a href="">Liên hệ</a></li>
+                        <li><a href="#">Sự cố</a></li>
+                        <li><a href="#">Thông tin</a></li>
+                        <li><a href="#">Liên hệ</a></li>
                     </ul>
                 </li>
             <!--End-->   
@@ -33,6 +35,9 @@
             <div class="search-btns">
                 <i class="search-ic ti-search"></i>
             </div> 
+            <div id="mb-menu" class="mobile-menu">
+                <i class="menu-ic ti-menu"></i>
+            </div>
             <!--End search-->  
         </div>
         <div id="slider">
@@ -48,15 +53,15 @@
                 <p class="much">Nostalgia is in this season. We’re living in turbulent times with the war in Ukraine and collapsing banks in Silicon Valley. Is it any wonder that the street style trends evoked the good old days of the early 2010s when Tumblr was everyone’s favorite app, and Alexa Chung was fashion’s twee It girl?
                     It wasn’t all about retro restylings outside the shows, though. Apple’s AirPod Maxes doubled as headphones and earmuffs in Paris where the screaming K-pop fans got loud and the temperatures dipped below freezing. Cate Blanchett’s Tár looks inspiring both designers and show goers alike. And in New York, a popular young designer is giving the French Breton stripe a run for its money. Scroll through to discover all the street style trends that took over the fall 2023 ready-to-wear season.</p>
                 <div class="product">
-                    <div class="product-1">
+                    <div class="mobile-product product-1">
                         <p class="product-name">The Best Street Style from Paris Fashion</p>
                         <img src="./css/img/20230128_5llONa4zTubXNVVk.jpeg" alt="Name" class="product-img" >
                     </div>
-                    <div class="product-1">
+                    <div class="mobile-product product-1">
                         <p class="product-name">The Best Street Style from Paris Fashion</p>
                         <img src="./css/img/20230128_tbyiai99bSezGz3L.jpeg" alt="Name" class="product-img">
                     </div>
-                    <div class="product-1">
+                    <div class="mobile-product product-1">
                         <p class="product-name">The Best Street Style from Paris Fashion</p>
                         <img src="./css/img/aokhoac.jpg" alt="Name" class="product-img">
                     </div>
@@ -65,7 +70,7 @@
                     
             </div>
             <!--san pham-->
-            <div class="sale">
+            <div id="sanpham-sale" class="sale">
                 <div class="content-section">
                     <h3 class="section-band text-white">SALE</h3 class="all-h3">
                     <p class="section-music text-white">Remember to book your tickets!</p class="all-p">
@@ -156,7 +161,7 @@
                 </div>
             </div>
                 <!-- Liên Hệ -->
-            <div class="lienhe">
+            <div id="toitranglh" class="lienhe">
                 <div class="content-section">
                     <h2 class="section-band">Liên Hệ</h2>
                     <p class="section-music">Mọi sự cố vui lòng liên hệ thông tin bên dưới :</p>
@@ -166,18 +171,18 @@
                             <p><i class="iclienhe ti-facebook"></i>PhyStudio</p>
                             <p><i class="iclienhe ti-instagram"></i>Phy.Studio</p>
                         </div>
-                        <div class="col col-col">
+                        <div class="col col-col s-full-with ">
                             <form action="">
-                                <div class="row lh-name">
-                                    <div class="col col-col">
+                                <div class="row lh-name s-full-with mt-8">
+                                    <div class="col col-col s-full-with">
                                         <input type="text" class="form-control" placeholder="Name" required>
                                     </div>
-                                    <div class="col col-col">
+                                    <div class="col col-col s-full-with s-mt-8 ">
                                         <input type="text" class="form-control" placeholder="Email" required>
                                     </div>
                                     <div class="clear"></div>
                                 </div>
-                                <div class="row lh-name2">
+                                <div class="row lh-name2 s-full-with">
                                     <div class="col col-full">
                                         <input type="text" class="form-control" placeholder="Sự Cố Gặp Phải" required>
                                     </div>
@@ -190,8 +195,9 @@
             </div>  
             <!-- end -->
             <!-- map -->
-            <div class="footer-end">
-                <div class="icon-end">
+            
+            <div class="footerr-end">
+                <div class="iconn-end">
                     <a href=""><i class="ti-facebook"></i></a>
                     <a href=""><i class="ti-instagram"></i></a>
                     <a href=""><i class="ti-pinterest-alt"></i></a>
@@ -201,7 +207,8 @@
     
     
                 </div>
-        </div>
+                
+            </div>
         </div>
     </div>
     <!-- thanh toan -->
@@ -259,6 +266,32 @@
         modeMain.addEventListener('click',function(event){
             event.stopPropagation()
         })
+    </script>
+    <script>
+        var header = document.getElementById('header');
+        var moblieMenu = document.getElementById('mb-menu');
+        var headerHeight = header.clientHeight
+        moblieMenu.onclick  = function (){
+            var isClosed = header.clientHeight === headerHeight;
+            if (isClosed) {
+                header.style.height = 'auto';
+            } else {
+                header.style.height = null;
+            }
+       
+        }
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        for (var i = 0; i < menuItems.length; i++) {
+            var menuItem = menuItems[i];
+            menuItem.onclick = function(event){
+                var fatherMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('navsup');
+                if (fatherMenu){
+                    event.preventDefault();
+                } else {
+                    header.style.height = null;
+                }
+            }
+        }
     </script>
 </body>
 </html>
